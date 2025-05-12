@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "cKk2DwD6xltiYOUs3qXSZAlN10NfGZyn9U3ZmkvK1/I=",
+  "Source": "AnketApp",
+  "BasePath": "_content/AnketApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AnketApp\\wwwroot",
+      "Source": "AnketApp",
+      "ContentRoot": "C:\\Users\\baris\\eski_anketapp\\AnketApp\\wwwroot\\",
+      "BasePath": "_content/AnketApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

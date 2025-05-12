@@ -1,0 +1,31 @@
+@using Microsoft.AspNetCore.Http
+@section Styles {
+    <link rel="stylesheet" href="site.css" />
+}
+
+@{
+    ViewData["Title"] = "Anketler";
+    var username = Context.Session.GetString("User");
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (username == null)
+{
+    <p><a href="@Url.Action("Login", "Account")">Giriş Yap</a> ya da <a href="@Url.Action("Register", "Account")">Kayıt Ol</a></p>
+}
+else
+{
+    <p>Hoş geldiniz, @username!</p>
+    <p><a href="@Url.Action("Create", "Survey")">Yeni Anket Oluştur</a></p>
+
+    <h3>Mevcut Anketler</h3>
+    <ul>
+        @foreach (var survey in Model)
+        {
+            <li>
+                <a href="@Url.Action("Fill", "Survey", new { id = survey.Id })">@survey.Title</a>
+            </li>
+        }
+    </ul>
+}

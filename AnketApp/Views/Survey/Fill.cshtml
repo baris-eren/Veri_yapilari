@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Anketi Doldur";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>@Model.Title</h3>
+
+<form method="post">
+    @foreach (var question in Model.Questions)
+    {
+        <div>
+            <label>@question.QuestionText</label><br />
+            @foreach (var option in question.Options)
+            {
+                <input type="radio" name="answers" value="@option" /> @option <br />
+            }
+        </div>
+    }
+
+    <div>
+        <button type="submit">Anketi Gönder</button>
+    </div>
+</form>

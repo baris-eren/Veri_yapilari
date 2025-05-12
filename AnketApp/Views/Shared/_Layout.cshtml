@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Http
+@{
+    var username = Context.Session.GetString("User");
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - AnketApp</title>
+    @RenderSection("Styles", required: false)  <!-- Stil sayfası eklenir -->
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="@Url.Action("Index", "Survey")">AnketApp</a>
+            <div class="navbar-nav ml-auto">
+                @if (username == null)
+                {
+                    <a class="nav-item nav-link" href="@Url.Action("Login", "Account")">Giriş Yap</a>
+                    <a class="nav-item nav-link" href="@Url.Action("Register", "Account")">Kayıt Ol</a>
+                }
+                else
+                {
+                    <span class="navbar-text">Hoş geldiniz, @username!</span>
+                    <a class="nav-item nav-link" href="@Url.Action("Logout", "Account")">Çıkış Yap</a>
+                }
+            </div>
+        </nav>
+        
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AnketApp. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
