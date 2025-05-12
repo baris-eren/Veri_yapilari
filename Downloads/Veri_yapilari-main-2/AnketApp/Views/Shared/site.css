@@ -1,0 +1,130 @@
+/* Temel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* açık mavi arka plan */
+    color: #333; /* yazı rengi */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #006400; /* koyu yeşil başlık renkleri */
+}
+
+a {
+    color: #006400; /* bağlantı rengi */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #228B22; /* bağlantı üzerine gelindiğinde renk değişir */
+}
+
+/* Ana içerik alanı */
+.container {
+    margin-top: 20px;
+}
+
+/* Form alanları */
+form {
+    background-color: rgb(224, 18, 18);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="password"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f10808;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #006400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #228B22;
+}
+
+/* Alert mesajları */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #0cbd35;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    color: #006400;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #006400;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #228B22;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #006400;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Genel düzenlemeler */
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 0, 0.5);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Hover efektleri */
+.nav-item.nav-link:hover {
+    background-color: #d3f9d8;
+    border-radius: 5px;
+}
+
+/* Sayfa başlığı */
+h1, h2 {
+    text-align: center;
+}

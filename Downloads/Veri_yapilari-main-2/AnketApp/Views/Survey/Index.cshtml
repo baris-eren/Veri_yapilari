@@ -1,0 +1,123 @@
+@using Microsoft.AspNetCore.Http
+@section Styles {
+    <link rel="stylesheet" href="site.css" />
+}
+
+@{
+    ViewData["Title"] = "Anketler";
+    var username = Context.Session.GetString("User");
+}
+
+<!-- CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2, h3 {
+        text-align: center;
+        margin-top: 30px;
+        color: #2c3e50;
+    }
+
+    .welcome {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .survey-list {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .survey-list li {
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .survey-list li:hover {
+        transform: translateY(-2px);
+        background-color: #f8f9fa;
+    }
+
+    .survey-list a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: 500;
+    }
+
+    .survey-list a:hover {
+        text-decoration: underline;
+    }
+
+    .login-message {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .login-message a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .login-message a:hover {
+        text-decoration: underline;
+    }
+
+    /* Message Styling */
+    .alert-info {
+        background-color: #d9edf7;
+        color: #31708f;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- TempData Message Display -->
+@if (TempData["Mesaj"] != null)
+{
+    <div class="alert-info">
+        @TempData["Mesaj"]
+    </div>
+}
+
+@if (username == null)
+{
+    <div class="login-message">
+        <p><a href="@Url.Action("Login", "Account")">Giriş Yap</a> ya da <a href="@Url.Action("Register", "Account")">Kayıt Ol</a></p>
+    </div>
+}
+else
+{
+    <p class="welcome">Hoş geldiniz, @username!</p>
+
+    <h3>Mevcut Anketler</h3>
+    <ul class="survey-list">
+        @foreach (var survey in Model)
+        {
+            <li>
+                <a href="@Url.Action("Fill", "Survey", new { id = survey.Id })">@survey.Title</a>
+            </li>
+        }
+    </ul>
+    <div class="login-message">
+        <button><p><a href="@Url.Action("Results", "Survey")">SONUÇLAR</a></p></button>
+    </div>
+}

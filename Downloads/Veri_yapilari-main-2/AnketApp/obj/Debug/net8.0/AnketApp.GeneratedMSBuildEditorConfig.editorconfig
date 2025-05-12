@@ -1,0 +1,51 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AnketApp
+build_property.RootNamespace = AnketApp
+build_property.ProjectDir = /Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Survey/Fill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VydmV5L0ZpbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Survey/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VydmV5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Survey/Resultlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VydmV5L1Jlc3VsdGxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zeynepkilic/Downloads/Veri_yapilari-main-2/AnketApp/Views/Survey/Results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VydmV5L1Jlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

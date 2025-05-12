@@ -1,0 +1,17 @@
+@using Microsoft.AspNetCore.Http
+@{
+    var username = Context.Session.GetString("User");
+}
+
+@if (username != null)
+{
+    <div class="navbar-text">
+        Hoş geldiniz, @username!
+    </div>
+    <a class="nav-item nav-link" href="@Url.Action("Logout", "Account")">Çıkış Yap</a>
+}
+else
+{
+    <a class="nav-item nav-link" href="@Url.Action("Login", "Account")">Giriş Yap</a>
+    <a class="nav-item nav-link" href="@Url.Action("Register", "Account")">Kayıt Ol</a>
+}
