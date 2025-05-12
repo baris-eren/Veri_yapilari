@@ -19,12 +19,15 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 | IDE         | Visual Studio Code               |
 | Veri Yapıları | Set, Stack, PriorityQueue, HashSet |
 
-##  Ekip 
-- **Buse Yılmaz**
-- **İbrahim Çalı**
-- **Zeynep Zümral Kılıç**
-- **Barış Eren**
-- **Veysel Can Özkan**
+### Frontend Ekibi
+- **Buse Yılmaz**: Kullanıcı arayüzü tasarımı (anket sayfası, giriş ekranı)
+- **İbrahim Çalı**: Sonuç ekranı, frontend testleri, hata ayıklama
+
+### Backend Ekibi
+- **Zeynep Zümral Kılıç**: Giriş/doğrulama sistemi, eşsiz oy kaydı
+- **Barış Eren**: Frontend-backend entegrasyonu, anket sonuçlarının yönetimi
+- **Veysel Can Özkan**: Kontrol algoritmaları, backend birim testleri
+
 
 ## Kullanım Senaryosu
 
