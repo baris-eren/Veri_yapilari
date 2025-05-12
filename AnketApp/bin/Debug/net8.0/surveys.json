@@ -1,30 +1,240 @@
 [
   {
     "Id": 0,
-    "Title": "ANKET 1",
+    "Title": "TEKNOLOJİ ANKETİ",
     "Questions": [
       {
-        "QuestionText": "1",
+        "QuestionText": "1. Hangi işletim sistemini daha çok tercih ediyorsunuz?",
         "Options": [
-          "A"
+          "Windows",
+          "macOS",
+          "Linux",
+          "Diğer"
         ]
       },
       {
-        "QuestionText": "2",
+        "QuestionText": "2. En çok kullandığınız sosyal medya platformu hangisidir?",
         "Options": [
-          "A"
+          "Instagram",
+          "Twitter (X)",
+          "TikTok",
+          "Facebook"
         ]
       },
       {
-        "QuestionText": "3",
+        "QuestionText": "3. En çok hangi cihazla internete giriyorsunuz?",
         "Options": [
-          "A"
+          "Akıllı telefon",
+          "Dizüstü bilgisayar",
+          "Tablet",
+          "Masaüstü bilgisayar"
         ]
       },
       {
-        "QuestionText": "4",
+        "QuestionText": "4. Yapay zekâ teknolojileri hakkında ne düşünüyorsunuz?",
         "Options": [
-          "A","B"
+          "Gelecek için çok önemli",
+          "Tehlikeli olabilir",
+          "Henüz gelişme aşamasında",
+          "Fikrimiz yok"
+        ]
+      },
+      {
+        "QuestionText": "5. Hangi teknoloji markasını daha çok beğeniyorsunuz?",
+        "Options": [
+          "Apple",
+          "Samsung",
+          "Huawei",
+          "Xiaomi"
+        ]
+      },
+      {
+        "QuestionText": "6. En çok kullandığınız yazılım dili hangisidir?",
+        "Options": [
+          "Python",
+          "Java",
+          "C#",
+          "JavaScript"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 1,
+    "Title": "EĞİTİM ANKETİ",
+    "Questions": [
+      {
+        "QuestionText": "1. En çok hangi eğitim seviyesindesiniz?",
+        "Options": [
+          "İlkokul",
+          "Ortaokul",
+          "Lise",
+          "Üniversite"
+        ]
+      },
+      {
+        "QuestionText": "2. Online eğitim ile ilgili ne düşünüyorsunuz?",
+        "Options": [
+          "Çok faydalı",
+          "Kısmen faydalı",
+          "Faydasız",
+          "Hiç ilgilenmiyorum"
+        ]
+      },
+      {
+        "QuestionText": "3. Hangi eğitim alanlarında daha çok bilgi edinmek istersiniz?",
+        "Options": [
+          "Bilgisayar Bilimleri",
+          "Tıp",
+          "Mühendislik",
+          "Sanat"
+        ]
+      },
+      {
+        "QuestionText": "4. Eğitimde en önemli faktör nedir?",
+        "Options": [
+          "Konu derinliği",
+          "Öğretmen kalitesi",
+          "Kaynak ve materyaller",
+          "Uygulama fırsatları"
+        ]
+      },
+      {
+        "QuestionText": "5. Hangi eğitim platformlarını tercih ediyorsunuz?",
+        "Options": [
+          "Coursera",
+          "Udemy",
+          "Khan Academy",
+          "YouTube"
+        ]
+      },
+      {
+        "QuestionText": "6. Eğitimde teknoloji kullanımının artması hakkında ne düşünüyorsunuz?",
+        "Options": [
+          "Çok olumlu",
+          "Olumlu",
+          "Olumsuz",
+          "Hiç etkilenmiyorum"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Title": "SEYAHAT ANKETİ",
+    "Questions": [
+      {
+        "QuestionText": "1. En çok hangi tür tatilleri tercih ediyorsunuz?",
+        "Options": [
+          "Deniz tatili",
+          "Kültürel gezi",
+          "Doğa yürüyüşü",
+          "Kış tatili"
+        ]
+      },
+      {
+        "QuestionText": "2. En sık hangi ulaşım aracını kullanıyorsunuz?",
+        "Options": [
+          "Uçak",
+          "Tren",
+          "Otobüs",
+          "Özel araç"
+        ]
+      },
+      {
+        "QuestionText": "3. Hangi ülkeyi ziyaret etmek istersiniz?",
+        "Options": [
+          "İtalya",
+          "Japonya",
+          "Amerika",
+          "Fransa"
+        ]
+      },
+      {
+        "QuestionText": "4. Seyahatte en çok hangi faktörü ön planda tutarsınız?",
+        "Options": [
+          "Fiyat",
+          "Konfor",
+          "Hizmet kalitesi",
+          "Güvenlik"
+        ]
+      },
+      {
+        "QuestionText": "5. Hangi mevsimde seyahat etmeyi tercih edersiniz?",
+        "Options": [
+          "Bahar",
+          "Yaz",
+          "Sonbahar",
+          "Kış"
+        ]
+      },
+      {
+        "QuestionText": "6. Seyahat sırasında hangi teknolojik cihazları kullanıyorsunuz?",
+        "Options": [
+          "Akıllı telefon",
+          "Dijital kamera",
+          "Tablet",
+          "Laptop"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Title": "SAĞLIK VE YAŞAM ANKETİ",
+    "Questions": [
+      {
+        "QuestionText": "1. Hangi spor dalıyla ilgileniyorsunuz?",
+        "Options": [
+          "Futbol",
+          "Basketbol",
+          "Yüzme",
+          "Koşu"
+        ]
+      },
+      {
+        "QuestionText": "2. Haftada kaç gün egzersiz yapıyorsunuz?",
+        "Options": [
+          "Her gün",
+          "Haftada 3-4 gün",
+          "Haftada 1-2 gün",
+          "Hiç yapmıyorum"
+        ]
+      },
+      {
+        "QuestionText": "3. Sağlıklı beslenme hakkında ne düşünüyorsunuz?",
+        "Options": [
+          "Çok önemlidir",
+          "Biraz önemli",
+          "Önemli değil",
+          "Hiç ilgilenmiyorum"
+        ]
+      },
+      {
+        "QuestionText": "4. En çok hangi sağlıklı içeceği tercih ediyorsunuz?",
+        "Options": [
+          "Su",
+          "Yeşil çay",
+          "Meyve suyu",
+          "Kahve"
+        ]
+      },
+      {
+        "QuestionText": "5. Uyku düzeniniz nasıl?",
+        "Options": [
+          "Her gece 8 saat uyurum",
+          "Genelde 6-7 saat uyurum",
+          "Bazen uykusuz kalırım",
+          "Çok az uyurum"
+        ]
+      },
+      {
+        "QuestionText": "6. Düzenli olarak sağlık kontrolleri yaptırıyor musunuz?",
+        "Options": [
+          "Evet, her yıl",
+          "Evet, 2-3 yılda bir",
+          "Hayır, hiç yaptırmadım",
+          "Hayır, sadece hastalandığımda"
         ]
       }
     ]

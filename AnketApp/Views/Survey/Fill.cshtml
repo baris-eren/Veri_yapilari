@@ -1,24 +1,85 @@
+@using Microsoft.AspNetCore.Http
 @{
-    ViewData["Title"] = "Anketi Doldur";
+    ViewData["Title"] = "Anketler";
+    var username = Context.Session.GetString("Username");
 }
+
+<!-- CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2, h3 {
+    using AnketApp.Models;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 30px;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .question-block {
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .question-block input[type="radio"] {
+        margin-right: 6px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
 
 <h2>@ViewData["Title"]</h2>
 
 <h3>@Model.Title</h3>
 
 <form method="post">
-    @foreach (var question in Model.Questions)
+    <!-- Kullanıcı ID'yi gizli input olarak gönder -->
+    <input type="hidden" name="username" value="@username" />
+
+    @for (int i = 0; i < Model.Questions.Count; i++)
     {
-        <div>
+        var question = Model.Questions[i];
+        <div class="question-block">
             <label>@question.QuestionText</label><br />
             @foreach (var option in question.Options)
             {
-                <input type="radio" name="answers" value="@option" /> @option <br />
+                <input type="radio" name="answers[@i]" value="@option" required /> @option <br />
             }
         </div>
     }
 
     <div>
         <button type="submit">Anketi Gönder</button>
-    </div>
+    </div>
 </form>

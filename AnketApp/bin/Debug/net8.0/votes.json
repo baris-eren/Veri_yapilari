@@ -2,31 +2,13 @@
   {
     "SurveyId": 0,
     "Answers": [
-      "futbol,voleybol,basketbol"
-    ]
-  },
-  {
-    "SurveyId": 0,
-    "Answers": [
-      "futbol,voleybol,basketbol"
-    ]
-  },
-  {
-    "SurveyId": 0,
-    "Answers": [
-      "futbol"
-    ]
-  },
-  {
-    "SurveyId": 2,
-    "Answers": [
-      "ed"
-    ]
-  },
-  {
-    "SurveyId": 0,
-    "Answers": [
-      "sadsa"
-    ]
+      "Windows",
+      "Facebook",
+      "Masaüstü bilgisayar",
+      "Henüz gelişme aşamasında",
+      "Xiaomi",
+      "JavaScript"
+    ],
+    "Username": "baris.eren4959@gmail.com"
   }
 ]

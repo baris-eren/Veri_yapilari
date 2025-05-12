@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cKk2DwD6xltiYOUs3qXSZAlN10NfGZyn9U3ZmkvK1/I=",
+  "Hash": "m59U4M1LvHDTjuyM7CGrpaIPWeq7YYmx3LbvA1awA28=",
   "Source": "AnketApp",
   "BasePath": "_content/AnketApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "AnketApp\\wwwroot",
       "Source": "AnketApp",
-      "ContentRoot": "C:\\Users\\baris\\eski_anketapp\\AnketApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\baris\\Veri_yapilari\\AnketApp\\wwwroot\\",
       "BasePath": "_content/AnketApp",
       "Pattern": "**"
     }

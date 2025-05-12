@@ -985,11 +985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\baris\\eski_anketapp\\AnketApp\\AnketApp.csproj",
+      "projectUniqueName": "C:\\Users\\baris\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
       "projectName": "AnketApp",
-      "projectPath": "C:\\Users\\baris\\eski_anketapp\\AnketApp\\AnketApp.csproj",
+      "projectPath": "C:\\Users\\baris\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
       "packagesPath": "C:\\Users\\baris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\baris\\eski_anketapp\\AnketApp\\obj\\",
+      "outputPath": "C:\\Users\\baris\\Veri_yapilari\\AnketApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

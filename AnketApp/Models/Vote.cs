@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;  // Bu kütüphane koleksiyonları (List, Dictionary) sağlar
-using Newtonsoft.Json;  // JSON işlemleri için gerekli
-using System.Linq;
-
+using System.Collections.Generic;
 
 namespace AnketApp.Models
 {
@@ -10,5 +7,6 @@ namespace AnketApp.Models
     {
         public int SurveyId { get; set; }
         public string[] Answers { get; set; }
+        public string Username { get; set; }
     }
 }
