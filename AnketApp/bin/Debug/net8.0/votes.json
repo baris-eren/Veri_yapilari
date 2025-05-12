@@ -1,13 +1,61 @@
 [
   {
-    "SurveyId": 0,
+    "SurveyId": 3,
     "Answers": [
       "Windows",
       "Facebook",
       "Masaüstü bilgisayar",
-      "Henüz gelişme aşamasında",
+      "Fikrimiz yok",
       "Xiaomi",
       "JavaScript"
+    ],
+    "Username": "1"
+  },
+  {
+    "SurveyId": 3,
+    "Answers": [
+      "Üniversite",
+      "Hiç ilgilenmiyorum",
+      "Sanat",
+      "Kaynak ve materyaller",
+      "Khan Academy",
+      "Olumsuz"
+    ],
+    "Username": "1"
+  },
+  {
+    "SurveyId": 3,
+    "Answers": [
+      "Üniversite",
+      "Hiç ilgilenmiyorum",
+      "Sanat",
+      "Kaynak ve materyaller",
+      "Khan Academy",
+      "Olumsuz"
+    ],
+    "Username": "2"
+  },
+  {
+    "SurveyId": 1,
+    "Answers": [
+      "Üniversite",
+      "Hiç ilgilenmiyorum",
+      "Sanat",
+      "Kaynak ve materyaller",
+      "Khan Academy",
+      "Olumsuz"
+    ],
+    "Username": "3"
+  },
+  {
+    "SurveyId": 3,
+    "Answers": [
+      "Futbol",
+      "Hiç yapmıyorum",
+      "Hiç ilgilenmiyorum",
+      "Kahve",
+      "Çok az uyurum",
+      "Hayır, hiç yaptırmadım"
     ],
     "Username": "baris.eren4959@gmail.com"
   }

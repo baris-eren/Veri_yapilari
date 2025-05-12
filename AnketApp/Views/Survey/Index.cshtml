@@ -76,9 +76,27 @@
     .login-message a:hover {
         text-decoration: underline;
     }
+
+    /* Message Styling */
+    .alert-info {
+        background-color: #d9edf7;
+        color: #31708f;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
 </style>
 
 <h2>@ViewData["Title"]</h2>
+
+<!-- TempData Message Display -->
+@if (TempData["Mesaj"] != null)
+{
+    <div class="alert-info">
+        @TempData["Mesaj"]
+    </div>
+}
 
 @if (username == null)
 {
@@ -97,6 +115,9 @@ else
             <li>
                 <a href="@Url.Action("Fill", "Survey", new { id = survey.Id })">@survey.Title</a>
             </li>
-        }
-    </ul>
+        }
+    </ul>
+    <div class="login-message">
+        <button><p><a href="@Url.Action("Results", "Survey")">SONUÇLAR</a></p></button>
+    </div>
 }

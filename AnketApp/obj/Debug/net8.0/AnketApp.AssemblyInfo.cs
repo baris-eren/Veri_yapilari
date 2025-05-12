@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnketApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaeeedf91df48132f45e8bfda3e7f5ce72fea127")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea3dea017d58df4ffd681bfad7a18e8a1593175b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnketApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnketApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

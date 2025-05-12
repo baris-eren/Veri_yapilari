@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Http;
 using AnketApp.Models;
 using AnketApp.Data;
 using System.Linq;
+using System.Collections.Generic;
+using Newtonsoft.Json; // Json verisini işlemek için
+using System.IO;
+
 
 namespace AnketApp.Controllers
 {
@@ -25,27 +29,36 @@ namespace AnketApp.Controllers
             }
 
             var surveys = _store.LoadSurveys();
-            return View(surveys);
+            var votes = _store.LoadVotes();
+
+            // Anketlerin oy sayılarını tutacak bir sözlük
+            var surveyVoteCount = surveys.ToDictionary(
+                s => s.Id, 
+                s => votes.Count(v => v.SurveyId == s.Id)
+            );
+
+            // PriorityQueue tanımlaması: Her anketin oy sayısı ve anket kendisi
+            var priorityQueue = new PriorityQueue<Survey, int>(
+                comparer: Comparer<int>.Create((x, y) => y.CompareTo(x)) // Azalan sıralama
+            );
+
+            // Anketleri oy sayısına göre kuyruğa ekliyoruz
+            foreach (var survey in surveys)
+            {
+                priorityQueue.Enqueue(survey, surveyVoteCount[survey.Id]);
+            }
+
+            // Kuyruktan anketleri sıralı şekilde alıyoruz
+            var sortedSurveys = new List<Survey>();
+            while (priorityQueue.Count > 0)
+            {
+                sortedSurveys.Add(priorityQueue.Dequeue());
+            }
+
+            return View(sortedSurveys);
         }
 
-        // GET: Survey/Create
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Survey/Create
-        [HttpPost]
-        public IActionResult Create(Survey survey)
-        {
-            var surveys = _store.LoadSurveys();
-            surveys.Add(survey);
-            _store.SaveSurveys(surveys);
-            return RedirectToAction("Index");
-        }
-
-        // GET: Survey/Fill/{id}
+        
         [HttpGet]
         public IActionResult Fill(int id)
         {
@@ -72,13 +85,90 @@ namespace AnketApp.Controllers
             var survey = surveys.FirstOrDefault(s => s.Id == id);
             if (survey == null) return RedirectToAction("Index");
 
-            // Oyu kaydet
-            var vote = new Vote { SurveyId = id, Answers = answers, Username = username };
             var votes = _store.LoadVotes();
+            var votedUsers = new HashSet<string>(
+                votes
+                    .Where(v => v.SurveyId == id)
+                    .Select(v => v.Username)
+            );
+
+            // Kullanıcının daha önce oy verip vermediğini hızlıca kontrol eder
+            if (votedUsers.Contains(username))
+            {
+                TempData["Mesaj"] = "Bu ankete zaten oy verdiniz!";
+                return RedirectToAction("Index");
+            }
+
+            var vote = new Vote
+            {
+                SurveyId = id,
+                Answers = answers,
+                Username = username
+            };
+
             votes.Add(vote);
             _store.SaveVotes(votes);
 
+            TempData["Mesaj"] = "Oylamanız başarıyla kaydedildi!";
             return RedirectToAction("Index");
         }
+
+        private readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "bin", "Debug", "net8.0", "votes.json");
+        [HttpGet]
+        public IActionResult Results()
+        {
+            var surveyResponses = GetSurveyResponsesFromJson(filePath);
+            return View(surveyResponses);
+        }
+
+        private List<SurveyResponse> GetSurveyResponsesFromJson(string filePath)
+        {
+            if (!System.IO.File.Exists(filePath))
+            {
+                return new List<SurveyResponse>();
+            }
+
+            var json = System.IO.File.ReadAllText(filePath);
+            var surveyResponses = JsonConvert.DeserializeObject<List<SurveyResponse>>(json);
+            return surveyResponses;
+        }
+        [HttpGet]
+        public IActionResult Resultlist()
+        {
+            if (HttpContext.Session.GetString("User") == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var surveys = _store.LoadSurveys();
+            var votes = _store.LoadVotes();
+
+            // Anketlerin oy sayılarını tutacak bir sözlük
+            var surveyVoteCount = surveys.ToDictionary(
+                s => s.Id, 
+                s => votes.Count(v => v.SurveyId == s.Id)
+            );
+
+            // PriorityQueue tanımlaması: Her anketin oy sayısı ve anket kendisi
+            var priorityQueue = new PriorityQueue<Survey, int>(
+                comparer: Comparer<int>.Create((x, y) => y.CompareTo(x)) // Azalan sıralama
+            );
+
+            // Anketleri oy sayısına göre kuyruğa ekliyoruz
+            foreach (var survey in surveys)
+            {
+                priorityQueue.Enqueue(survey, surveyVoteCount[survey.Id]);
+            }
+
+            // Kuyruktan anketleri sıralı şekilde alıyoruz
+            var sortedSurveys = new List<Survey>();
+            while (priorityQueue.Count > 0)
+            {
+                sortedSurveys.Add(priorityQueue.Dequeue());
+            }
+
+            return View(sortedSurveys);
+        }
+        
     }
 }
