@@ -36,6 +36,5 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 ##  Proje Bağlantısı
 
 GitHub üzerinde projeye buradan ulaşabilirsiniz:  
-(https://github.com/baris-eren/Veri_yapilari/new/main?filename=README.md)
-
+(https://github.com/baris-eren/Veri_yapilari)
 Bu proje; veri bütünlüğü, kullanıcı güvenliği ve görsel etkileşim açısından temel seviyede anket sistemlerinin nasıl geliştirileceğini göstermektedir.
