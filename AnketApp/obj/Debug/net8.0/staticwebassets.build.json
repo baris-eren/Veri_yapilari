@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "m59U4M1LvHDTjuyM7CGrpaIPWeq7YYmx3LbvA1awA28=",
+  "Hash": "1vyFA6lAiNfbe1R9NfyZbi0BNas3lw+RYcnSoH85T8g=",
   "Source": "AnketApp",
   "BasePath": "_content/AnketApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "AnketApp\\wwwroot",
-      "Source": "AnketApp",
-      "ContentRoot": "C:\\Users\\baris\\Veri_yapilari\\AnketApp\\wwwroot\\",
-      "BasePath": "_content/AnketApp",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }
