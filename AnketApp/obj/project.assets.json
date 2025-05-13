@@ -979,23 +979,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EXCALIBUR\\.nuget\\packages\\": {},
+    "C:\\Users\\baris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EXCALIBUR\\OneDrive - uludag.edu.tr\\Belgeler\\GitHub\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
+      "projectUniqueName": "C:\\Users\\baris\\Veri_yapilari\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
       "projectName": "AnketApp",
-      "projectPath": "C:\\Users\\EXCALIBUR\\OneDrive - uludag.edu.tr\\Belgeler\\GitHub\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
-      "packagesPath": "C:\\Users\\EXCALIBUR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EXCALIBUR\\OneDrive - uludag.edu.tr\\Belgeler\\GitHub\\Veri_yapilari\\AnketApp\\obj\\",
+      "projectPath": "C:\\Users\\baris\\Veri_yapilari\\Veri_yapilari\\AnketApp\\AnketApp.csproj",
+      "packagesPath": "C:\\Users\\baris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\baris\\Veri_yapilari\\Veri_yapilari\\AnketApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\EXCALIBUR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\baris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1056,7 +1056,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AnketApp
 build_property.RootNamespace = AnketApp
-build_property.ProjectDir = C:\Users\EXCALIBUR\OneDrive - uludag.edu.tr\Belgeler\GitHub\Veri_yapilari\AnketApp\
+build_property.ProjectDir = C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\EXCALIBUR\OneDrive - uludag.edu.tr\Belgeler\GitHub\Veri_yapilari\AnketApp
+build_property.MSBuildProjectDirectory = C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Account/Login.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Account/Register.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Shared/_Layout.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Survey/Fill.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Survey/Fill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XEZpbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Survey/Index.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Survey/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Survey/Resultlist.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Survey/Resultlist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XFJlc3VsdGxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/EXCALIBUR/OneDrive - uludag.edu.tr/Belgeler/GitHub/Veri_yapilari/AnketApp/Views/Survey/Results.cshtml]
+[C:/Users/baris/Veri_yapilari/Veri_yapilari/AnketApp/Views/Survey/Results.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VydmV5XFJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
