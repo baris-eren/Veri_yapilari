@@ -4,7 +4,7 @@ using AnketApp.Models;
 using AnketApp.Data;
 using System.Linq;
 using System.Collections.Generic;
-using Newtonsoft.Json; // Json verisini işlemek için
+using Newtonsoft.Json; 
 using System.IO;
 
 
@@ -19,7 +19,6 @@ namespace AnketApp.Controllers
             _store = store;
         }
 
-        // GET: Survey
         [HttpGet]
         public IActionResult Index()
         {
@@ -31,24 +30,20 @@ namespace AnketApp.Controllers
             var surveys = _store.LoadSurveys();
             var votes = _store.LoadVotes();
 
-            // Anketlerin oy sayılarını tutacak bir sözlük
             var surveyVoteCount = surveys.ToDictionary(
                 s => s.Id, 
                 s => votes.Count(v => v.SurveyId == s.Id)
             );
 
-            // PriorityQueue tanımlaması: Her anketin oy sayısı ve anket kendisi
             var priorityQueue = new PriorityQueue<Survey, int>(
                 comparer: Comparer<int>.Create((x, y) => y.CompareTo(x)) // Azalan sıralama
             );
 
-            // Anketleri oy sayısına göre kuyruğa ekliyoruz
             foreach (var survey in surveys)
             {
                 priorityQueue.Enqueue(survey, surveyVoteCount[survey.Id]);
             }
 
-            // Kuyruktan anketleri sıralı şekilde alıyoruz
             var sortedSurveys = new List<Survey>();
             while (priorityQueue.Count > 0)
             {
@@ -71,7 +66,6 @@ namespace AnketApp.Controllers
             return View(survey);
         }
 
-        // POST: Survey/Fill/{id}
         [HttpPost]
         public IActionResult Fill(int id, string[] answers)
         {
@@ -92,7 +86,6 @@ namespace AnketApp.Controllers
                     .Select(v => v.Username)
             );
 
-            // Kullanıcının daha önce oy verip vermediğini hızlıca kontrol eder
             if (votedUsers.Contains(username))
             {
                 TempData["Mesaj"] = "Bu ankete zaten oy verdiniz!";
@@ -143,24 +136,20 @@ namespace AnketApp.Controllers
             var surveys = _store.LoadSurveys();
             var votes = _store.LoadVotes();
 
-            // Anketlerin oy sayılarını tutacak bir sözlük
             var surveyVoteCount = surveys.ToDictionary(
                 s => s.Id, 
                 s => votes.Count(v => v.SurveyId == s.Id)
             );
 
-            // PriorityQueue tanımlaması: Her anketin oy sayısı ve anket kendisi
             var priorityQueue = new PriorityQueue<Survey, int>(
-                comparer: Comparer<int>.Create((x, y) => y.CompareTo(x)) // Azalan sıralama
+                comparer: Comparer<int>.Create((x, y) => y.CompareTo(x))
             );
 
-            // Anketleri oy sayısına göre kuyruğa ekliyoruz
             foreach (var survey in surveys)
             {
                 priorityQueue.Enqueue(survey, surveyVoteCount[survey.Id]);
             }
 
-            // Kuyruktan anketleri sıralı şekilde alıyoruz
             var sortedSurveys = new List<Survey>();
             while (priorityQueue.Count > 0)
             {

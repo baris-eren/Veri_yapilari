@@ -2194,7 +2194,6 @@ C:\Users\EXCALIBUR\OneDrive - uludag.edu.tr\Belgeler\GitHub\Veri_yapilari\AnketA
 C:\Users\EXCALIBUR\OneDrive - uludag.edu.tr\Belgeler\GitHub\Veri_yapilari\AnketApp\obj\Debug\net8.0\AnketApp.genruntimeconfig.cache
 C:\Users\EXCALIBUR\OneDrive - uludag.edu.tr\Belgeler\GitHub\Veri_yapilari\AnketApp\obj\Debug\net8.0\ref\AnketApp.dll
 C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\bin\Debug\net8.0\appsettings.json
-C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\bin\Debug\net8.0\AnketApp.staticwebassets.runtime.json
 C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\bin\Debug\net8.0\AnketApp.exe
 C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\bin\Debug\net8.0\AnketApp.deps.json
 C:\Users\baris\Veri_yapilari\Veri_yapilari\AnketApp\bin\Debug\net8.0\AnketApp.runtimeconfig.json

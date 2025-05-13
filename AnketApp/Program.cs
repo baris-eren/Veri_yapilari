@@ -6,14 +6,11 @@ using AnketApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// ⬇️ JsonStore'u DI sistemine ekle
 builder.Services.AddSingleton<AnketApp.Data.JsonStore>();
 
-// Session servisi için gerekli ayarlar:
-builder.Services.AddDistributedMemoryCache(); // <-- GEREKLİ
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -23,22 +20,21 @@ builder.Services.AddSession(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
 
-app.UseHttpsRedirection(); // HTTPS'ye yönlendirme
-app.UseStaticFiles();      // Statik dosyaların sunulması için bu satır gerekiyor
+app.UseHttpsRedirection(); 
+app.UseStaticFiles();     
 
 app.UseRouting();
 
-app.UseAuthentication();  // Eğer kimlik doğrulama kullanıyorsanız
-app.UseAuthorization();   // Yetkilendirme işlemleri
+app.UseAuthentication();  
+app.UseAuthorization();  
 
-app.UseSession();         // Session yönetimi için burası önemli
+app.UseSession();      
 
 app.MapControllerRoute(
     name: "default",
