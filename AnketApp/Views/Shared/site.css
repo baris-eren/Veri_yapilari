@@ -1,31 +1,31 @@
-/* Temel stil ayarları */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* açık mavi arka plan */
-    color: #333; /* yazı rengi */
+    background-color: #f0f8ff; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
 
 h2, h3 {
-    color: #006400; /* koyu yeşil başlık renkleri */
+    color: #006400; 
 }
 
 a {
-    color: #006400; /* bağlantı rengi */
+    color: #006400; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #228B22; /* bağlantı üzerine gelindiğinde renk değişir */
+    color: #228B22; 
 }
 
-/* Ana içerik alanı */
+
 .container {
     margin-top: 20px;
 }
 
-/* Form alanları */
+
 form {
     background-color: rgb(224, 18, 18);
     padding: 20px;
@@ -60,7 +60,7 @@ form button:hover {
     background-color: #228B22;
 }
 
-/* Alert mesajları */
+
 .alert {
     padding: 10px;
     border-radius: 5px;
@@ -78,7 +78,7 @@ form button:hover {
     color: #721c24;
 }
 
-/* Navbar */
+
 .navbar {
     margin-bottom: 20px;
     background-color: #f8f9fa;
@@ -97,7 +97,7 @@ form button:hover {
     color: #228B22;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -108,7 +108,7 @@ footer {
     bottom: 0;
 }
 
-/* Genel düzenlemeler */
+
 button:focus, input:focus, select:focus, textarea:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 102, 0, 0.5);
@@ -118,13 +118,13 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-/* Hover efektleri */
+
 .nav-item.nav-link:hover {
     background-color: #d3f9d8;
     border-radius: 5px;
 }
 
-/* Sayfa başlığı */
+
 h1, h2 {
     text-align: center;
 }
