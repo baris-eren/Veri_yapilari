@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;  // Bu kütüphane koleksiyonları (List, Dictionary) sağlar
+using System.Collections.Generic;  
 
 namespace AnketApp.Models
 {
