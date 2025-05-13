@@ -17,7 +17,7 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 | Backend     | C#, .NET 8, JSON veri yönetimi   |
 | Frontend    | HTML, CSS                        |
 | IDE         | Visual Studio Code               |
-| Veri Yapıları | Set, Stack, PriorityQueue, HashSet |
+| Veri Yapıları | Set, PriorityQueue, HashSet |
 
 ### Frontend Ekibi
 - **Buse Yılmaz**: Kullanıcı arayüzü tasarımı (anket sayfası, giriş ekranı)
@@ -32,7 +32,6 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 1. Priority queue (anketleri oy sayısına göre sıralamak için) zaman karmaşıklığı O(nlogn)
 2. HashSet(benzersiz kullanıcı adı tutmak) zaman karmaşıklığı O(n)
 3. Set (oy tekrarını önlemek amacıyla) zaman karmaşıklığı O(1)
-4. Stack (bir seçeneği geri alma işlemi) zaman karmaşıklığı O(1)
 
 ## Kullanım Senaryosu
 
