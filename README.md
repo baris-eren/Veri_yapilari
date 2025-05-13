@@ -28,6 +28,11 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 - **Barış Eren**: Frontend-backend entegrasyonu, anket sonuçlarının yönetimi
 - **Veysel Can Özkan**: Kontrol algoritmaları, backend birim testleri
 
+## Kullanılan Algoritmalar Ve Karmaşıklıkları
+1. Priority queue (anketleri oy sayısına göre sıralamak için) zaman karmaşıklığı O(nlogn)
+2. HashSet(benzersiz kullanıcı adı tutmak) zaman karmaşıklığı O(n)
+3. Set (oy tekrarını önlemek amacıyla) zaman karmaşıklığı O(n)
+4. Stack (bir seçeneği geri alma işlemi) zaman karmaşıklığı O(1)
 
 ## Kullanım Senaryosu
 
@@ -35,6 +40,7 @@ Kullanıcıların farklı temalarda hazırlanan anketlere katılabildiği ve her
 2. Sistemden bir anket seçer ve oy verir.
 3. Sistem aynı kullanıcının tekrar oy kullanmasını engeller.
 4. Sonuçlar anında ekrana yansıtılır.
+
 
 ##  Proje Bağlantısı
 
